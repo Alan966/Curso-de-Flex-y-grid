@@ -1,0 +1,79 @@
+/* Layout es geometria e indica donde va a estar o se quedara un elemento
+    Float es otra forma
+    Alturas ifuales 
+    Alineacion en dos ejes 
+    Elementos flexibles 
+
+    flex container Padre 
+    flex item Hijos
+
+    main axis es el eje principal 
+    cross axis eje perpendicular al principal
+*/
+
+
+body{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 4rem;
+}
+.flex-container{
+    display: flex;
+    background: yellow;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap-reverse;
+    flex-direction: row-reverse; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    flex-flow: wrap;
+    justify-content: space-around;
+    height: 300px;
+    align-items: flex-end;
+    /* align-items: center; */
+    /* align-content: flex-end; */
+}
+.flex-container::before{
+    content: 'S/';
+}
+
+.flex-container::after{
+    content: '.00';
+}
+/* .flex-container{
+    display: inline-flex | flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+    flex-wrap: nowrap | wrap;
+    flex-flow: flex-direction | flex-wrap ;
+
+    Alineacion 
+    -Alineacion de items:
+    justify-content: Alinea los items en el eje principal main axis; 
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; 
+    align-items: flex-start | flex-end | center | baseline | stretch ; 
+    align-items: Alinea los items en el eje secundario (cross axis) dentro de la linea; 
+
+    -Alineacion de Lineas:
+    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch; 
+} */
+
+.flex-item{
+    border: 1px solid #000;
+    margin: 1rem;
+    /* padding: .5em 1em; */
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* .flex-item:nth-child(2){
+    font-size: 60px;
+} */
+
+.button{
+    /* background: yellow;  */
+    display: flex;
+    padding: .5em 1em;
+}
