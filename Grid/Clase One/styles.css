@@ -41,9 +41,9 @@
         Grid-gap 
     Colocar grid-items
 */
-/* 
 
-*{
+
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,8 +55,8 @@
     background: yellow;
     font-size: 2em;
     grid-template-columns:1fr 2fr 1fr;
-    grid-template-columns: 1f 6fr 3fr;
-    grid-gap: 0 1em;
+    grid-template-columns: 1fr 6fr 3fr;
+    grid-gap: 1em 1em;
 
 }
 

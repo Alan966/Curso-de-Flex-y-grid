@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
 }
-/*
 
+/* 
 .container{
     display: flex;
     height: 200px; */
@@ -17,7 +17,7 @@
     background: yellow;
 }
 
-.container::before, 
+.container::before,
 .container::after{
     content: '';
     display: block;
@@ -36,22 +36,22 @@
 
 /* Numero del 1 al 5 */
 
-.container{
+/* .container{
     display: flex;
     font-size: 3em;
     background: yellow;
     height: 300px;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
-}
-
+/* } */
+/* 
 .item{
-    background: pink;
+    background: pink; */
     /* flex: 1 1 0; */
     /* flex: 1; */
-    height: 100px;
+    /* height: 100px; */
     /* flex: none; */
     /* flex-grow: 1; */
     /* flex: flex-grow flex-shrink flex-basis : initial | auto | none | n  = cualquier numero positivo */
@@ -67,28 +67,31 @@
     /* flex-shrink: 3; */
     /* flex-basis: 0; */
     /* width: 200px; */
+    /* width: 4rem;
 }
 .item:first-child{
-    order: -2;
-}
+    order: 0;
+} */
 
-.item:nth-child(3){
+/* .item:nth-child(3){ */
     /* flex-grow:1; */
     /* flex-shrink: 1; */
     /* flex-shrink: es para que se encoja un elemento */
-    /* align-self: flex-end; */
-    order: -1;
+    /* align-self: flex-end;
+    order: -1; */
     /* align-self: auto | flex-start | center | baseline | stretch */
-}
+/* }
 
 .disccount{
     border: 2px solid red;
-    order: -1;
+    order: -2;
+    align-self: flex-start;
+    flex-grow: 4;
 }
 
 .item:nth-child(even){
     background: cyan;
-}
+} */
 
 /* 
 Cantidad total de flex-grow: 
@@ -131,13 +134,16 @@ Cantidad total de flex-grow:
     height: 3em;
     background: yellow;
 }
-
-.aside{
-    width: 200px;
-    background: red;
+.page > *{
+    flex-basis: 1;
+}
+.aside{ */
+    /* width: 200px; */
+    /* background: red;
+    flex-grow: 1;
 }
 
 .main{
     background: green;
-    flex-grow: 1;
+    flex-grow: 2;
 } */
